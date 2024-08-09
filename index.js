@@ -35,7 +35,7 @@ app.use("/transaction", TransitionRouter);
 app.use("/admin", AdminRouter);
 
 mongoose.connect(
-    "mongodb://localhost:27017",
+    "mongodb+srv://premjatol:Premjatol%406376@atlascluster.0t8oc.mongodb.net/",
     {
         dbName: "firstProject"
     }
