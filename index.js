@@ -10,7 +10,7 @@ const OrderRouter = require('./routers/Order');
 // const adminAuth = require('./middleware/adminAuth');
 const TransitionRouter = require('./routers/Transition');
 const AdminRouter = require('./routers/Admin');
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
@@ -43,7 +43,7 @@ mongoose.connect(
 .then(
     (success)   =>{
         console.log("Server Chalu Hai");
-        app.listen(PORT, ()=> console.log("Server Started"))
+        app.listen(port, ()=> console.log("Server Started"))
     }
 ).catch(
     (err)=>{
