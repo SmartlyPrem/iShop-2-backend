@@ -43,10 +43,12 @@ mongoose.connect(
 .then(
     (success)   =>{
         console.log("ZYX Server Chalu Hai");
-        app.listen(port, ()=> console.log("ZYX Server Connect"))
+        app.listen(port, () => {
+            console.log(`Example app listening on port ${port}`)
+        })
     }
 ).catch(
     (err)=>{
-        console.log("XYZ mongodb not Connect");
+        console.log(`XYZ mongodb not Connect ${err.message} `);
     }
 )
