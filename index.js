@@ -42,11 +42,11 @@ mongoose.connect(
 )
 .then(
     (success)   =>{
-        console.log("Server Chalu Hai");
-        app.listen(port, ()=> console.log("Server Started"))
+        console.log("ZYX Server Chalu Hai");
+        app.listen(port, ()=> console.log("ZYX Server Connect"))
     }
 ).catch(
     (err)=>{
-        console.log("The server not connect to the database");
+        console.log("XYZ mongodb not Connect");
     }
 )
