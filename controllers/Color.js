@@ -53,7 +53,7 @@ class ColorController {
                     })
                 } catch (error) {
                     rej({
-                        msg: "Internal server error of mine",
+                        msg: `Internal server error of mine ${error}`,
                         status: 0
                     })
                 }
