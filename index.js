@@ -35,7 +35,7 @@ app.use("/transaction", TransitionRouter);
 app.use("/admin", AdminRouter);
 
 mongoose.connect(
-    "mongodb+srv://premjatol:Premjatol@6376@atlascluster.0t8oc.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster",
+    "mongodb+srv://premjatol:ishopwebsite@atlascluster.0t8oc.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster",
     {
         dbName: "firstProject"
     }
